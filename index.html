@@ -2,6 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="img_style.css" />
+
 </head>
 <body>
     <div class="topnav">
@@ -18,18 +20,35 @@
     <div class="div.container" id="about"></div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="divider"><span></span><span>My Photos</span><span></span></div>
-    <div class="div.container" id="photos"></div>
+    
+    <div class="div.container" id="photos">
+        <!-- Trigger the Modal -->
+        <img id="myImg" src="./images/1.jpeg" alt="1" style="width: 10%; height: 5%;" onclick="clickedImg()">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="divider"><span></span><span>My Playlist</span><span></span></div>
     <div class="div.container" id="playlist"></div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="divider"><span></span><span>Likes</span><span></span></div>
-    <div class="div.container" id="like"></div>
+    <div class="div.container" id="like">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-shiloari%2F&width=450&layout=standard&action=like&size=small&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="divider"><span></span><span>QR Code</span><span></span></div>
     <div class="QRcode-container" id="qrcode">
         <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">QR code for my website</a>
-        <img style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;" src="QRcode.png"/>
+        <img style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;" src="./images/QRcode.png"/>
     </div>
     <br>
     <div class="divider"><span></span><span>Q&A</span><span></span></div>
@@ -38,5 +57,6 @@
     <div class="divider"><span></span><span>Contact Me</span><span></span></div>
     <div class="div.container" id="contact"></div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="img_func.js"></script>
 </body>
 </html>

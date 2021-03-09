@@ -26,7 +26,7 @@
   }
   
   /* Add a color to the active/current link */
-  .topnav a:focus {
+  .topnav a:active {
 	background-color: #4CAF50;
 	color: white;
   }
@@ -80,5 +80,5 @@
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	position: auto;
 }
+
