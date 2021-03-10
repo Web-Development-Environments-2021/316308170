@@ -20,3 +20,12 @@ function clickedImg(){
     modal.style.display = "none";
     }
 }
+
+function addEmoji(){
+    document.getElementById("textArea").value += document.getElementById("emojis").value
+}
+
+function submit(){
+    document.getElementById("textArea").value = ''
+    document.getElementById("email").value = ''
+}

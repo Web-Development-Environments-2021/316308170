@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" type="text/css" href="img_style.css" />
-
+<link rel="stylesheet" type="text/css" href="img_style.css"/>
+<link rel="stylesheet" type="text/css" href="submit_button.css"/>
 </head>
 <body>
     <div class="topnav">
@@ -15,13 +15,22 @@
         <a href="#qa">Q&A</a>
         <a href="#contact">Contact Me</a>
     </div>
-    <br><br><br><br><br><br><br>
+    <div id="about"></div>
+    <br><br>
     <div class="divider"><span></span><span>About Me</span><span></span></div>
-    <div class="div.container" id="about"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="div.container" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">
+        <a>
+            My name is Eldad Shilo. I was born in 15/10/1934 in Gedera. <br> 
+            During my militiary service in the IDF I served in "Mamram" unit. <br>
+            After that, I studied structural engineering in the "Technion", Haifa. <br>
+            Since then, I have been living in Haifa, and raised there my 3 children with my lovely wife, Miriam. <br>
+            I try to keep up with technology, and one of my hobbies is to burn movies and music on CDs. 
+        </a>
+    </div>
+    <div id="photos"></div>
+    <br><br>
     <div class="divider"><span></span><span>My Photos</span><span></span></div>
-    
-    <div class="div.container" id="photos">
+    <div class="div.container">
         <!-- Trigger the Modal -->
         <img id="myImg" src="./images/1.jpeg" alt="1" style="width: 10%; height: 5%;" onclick="clickedImg()">
 
@@ -37,26 +46,62 @@
             <div id="caption"></div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="playlist"></div>
+    <br><br>
     <div class="divider"><span></span><span>My Playlist</span><span></span></div>
-    <div class="div.container" id="playlist"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="div.container" style="text-align: center;">
+        <iframe width="700" height="450" src="https://www.youtube.com/embed/videoseries?list=PLt5C4xKNUSS3DSuvHdmenIPND5AW8l8b2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+    </div>
+    <div id="like"></div>
+    <br><br>
     <div class="divider"><span></span><span>Likes</span><span></span></div>
-    <div class="div.container" id="like">
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-shiloari%2F&width=450&layout=standard&action=like&size=small&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="div.container" style="text-align: center;">
+       <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-shiloari%2F&width=450&layout=standard&action=like&size=small&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
+    <div id="qrcode"></div>
+    <br><br>
     <div class="divider"><span></span><span>QR Code</span><span></span></div>
-    <div class="QRcode-container" id="qrcode">
+    <div class="QRcode-container">
         <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">QR code for my website</a>
         <img style="width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto;" src="./images/QRcode.png"/>
     </div>
-    <br>
+    <div id="qa"></div>
+    <br><br>
     <div class="divider"><span></span><span>Q&A</span><span></span></div>
-    <div class="div.container" id="qa"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="div.container"></div>
+    <div id="contact"></div>
+    <br><br>
     <div class="divider"><span></span><span>Contact Me</span><span></span></div>
-    <div class="div.container" id="contact"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <script src="img_func.js"></script>
+    <div class="div.container" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;"">
+        <form>
+            <a>If you wish to contact me, you can write your message down below. <br>
+                Don't forget to write down your email address so I can contact you back!
+            </a>
+            <br><br>
+            <a>Your email:     </a> 
+            <input type="text" id="email"> <br><br>
+            <textarea name="message" rows="10" cols="100" id="textArea"></textarea> <br>
+            <a>Choose an emoji from the list and attach it to the message:</a>
+            <select name="drp_dwn" id="emojis" onchange="addEmoji()">
+                <option value="&#128151">&#128151</option>
+                <option value="&#128512">&#128512</option>
+                <option value="&#128514">&#128514</option>
+                <option value="&#128517">&#128517</option>
+              </select>
+            <br><br><br>
+            <div class="wrapper" onclick="submit()">
+                <div class="link_wrapper">
+                  <a class="submit">Submit!</a>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                      <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                    </svg>
+                  </div>
+                </div>
+                
+              </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
