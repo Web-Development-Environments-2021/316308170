@@ -26,27 +26,6 @@ function addEmoji() {
     document.getElementById("emojis").value = ''
 }
 
-function submit() {
-    document.getElementById("message_input").value = ''
-    document.getElementById("email").value = ''
-    window.open('mailto:shiloari@post.bgu.ac.il?subject=subject&body=message_input');
-}
-
-function sendEmail() {
-    Email.send({
-            Host: "smtp.gmail.com",
-            To: 'shiloari@post.bgu.ac.il',
-            Username: "shiloari@post.bgu.ac.il'",
-            Password: "aRielsh95",
-            From: document.getElementById("email_input").value,
-            Subject: document.getElementById("message_subject").value,
-            Body: document.getElementById("message_input").value,
-        })
-        .then(function(message) {
-            alert("mail sent successfully")
-        });
-}
-
 
 
 
