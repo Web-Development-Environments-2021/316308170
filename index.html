@@ -6,13 +6,16 @@
         <link rel="stylesheet" type="text/css" href="img_style.css"/>
         <link rel="stylesheet" type="text/css" href="submit_button.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css"/>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
 
     <body>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="N0aIJ6FJ"></script>
-
+        <a href="#about">
+            <img src="images/logo.png" id="logo">
+        </a>
         <div class="topnav">
             <a href="#about">About Me
                 <i class="fa fa-fw fa-user"></i>
@@ -36,7 +39,7 @@
                 <i class="fa fa-fw fa-envelope"></i>
             </a>
         </div>
-       
+
         <div id="about"></div>
         <br>
         <div class="divider">
@@ -44,9 +47,16 @@
             <span>About Me</span>
             <span></span>
         </div>
-        <div class="frosted_glass" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;
-                                                     letter-spacing: 1px; width: 80%; margin: auto;">
-            <i style=" margin:2px">
+        <h1 style="font-family: Raleway; font-size: 3.5em; font-weight: 200; margin: auto; width: 80%; ">My name is Eldad and I'm a <br>
+            <span
+               class="txt-rotate"
+               data-period="500"
+               data-rotate='[ "Grandfather.", "Father.", "Husband.", "Construction Engineer.", "Movies Freak.", "Family Person" ]'></span>
+          </h1>
+          <br>
+        <div class="frosted_glass" style="font-family: Raleway; font-size: 20px;
+                                                                                     letter-spacing: 1px; width: 80%; margin: auto;">
+            <p style=" margin:2px">
                 <br>My name is Eldad Shilo. I was born in 15/10/1934 in Gedera.
                 <br>
                 During my militiary service in the IDF I served in "Mamram" unit.
@@ -57,7 +67,7 @@
                 <br>
                 I try to keep up with technology, and one of my hobbies is to burn movies and music on CDs.
                 <br>
-            </i><br>
+            </p><br>
         </div>
         <br><br><br><br><br><br><br><br>
         <div id="photos"></div>
@@ -74,18 +84,28 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">1 / 5</div>
                     <img src="./images/2.jpeg" style="width: 100%; height: 600px;">
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
+                    <div class="numbertext">2 / 5</div>
                     <img src="./images/3.jpeg" style="width: 100%; height: 600px;">
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
+                    <div class="numbertext">3 / 5</div>
                     <img src="./images/1.jpeg" style="width: 100%; height: 600px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/4.jpeg" style="width: 100%; height: 600px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./images/5.jpg" style="width: 100%; height: 600px;">
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -110,7 +130,8 @@
         </div>
         <div class="div.container" style="text-align: center;">
             <h1>
-                <span style="padding:5px; background-color:rgba(255, 255, 255, 0.562);">&#127929&#127928&#127925 CHECK OUT MY PLAYLIST! &#127925&#127928&#127929	</span>
+                <span style="padding:5px; background-color:rgba(255, 255, 255, 0.562);">&#127929&#127928&#127925 CHECK OUT MY PLAYLIST! &#127925&#127928&#127929
+                </span>
             </h1>
             <br>
             <iframe width="700" height="450" src="https://www.youtube.com/embed/videoseries?list=PLt5C4xKNUSS3DSuvHdmenIPND5AW8l8b2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -181,33 +202,33 @@
                 </td>
                 <td>
                     <p>People publish content that other
-                                                                people can consume, companies
-                                                                build platforms that let people
-                                                                publish content for other people</p>
+                                                                                                                people can consume, companies
+                                                                                                                build platforms that let people
+                                                                                                                publish content for other people</p>
                 </td>
                 <td>
                     <p>People build applications that
-                                                                people can interact with,
-                                                                companies build platforms that
-                                                                let people publish services by
-                                                                leveraging the associations
-                                                                between people or special
-                                                                content</p>
+                                                                                                                people can interact with,
+                                                                                                                companies build platforms that
+                                                                                                                let people publish services by
+                                                                                                                leveraging the associations
+                                                                                                                between people or special
+                                                                                                                content</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Content is static, one direction publishing of content without any interaction between
-                                                                readers or publishers.</p>
+                                                                                                                readers or publishers.</p>
                 </td>
                 <td>
                     <p>Two way communication through social networking, blogging, wikis,
-                                                                tagging, user generated content and video.</p>
+                                                                                                                tagging, user generated content and video.</p>
                 </td>
                 <td>
                     <p>
                         Artificial intelligence and the web learning the user's preferences and delivers it a
-                                                                personalized web experience</p>
+                                                                                                                personalized web experience</p>
                 </td>
             </tr>
         </table><br>
@@ -221,16 +242,16 @@
                 <b>buying a refrigerator</b>
                 as an example. In
                 <b>web 1.0</b>, if we wish to buy a refrigerator
-                                    via the web, we would need the accurate url of the company which sells the refrigerator, so 
-                                    we can access its stataic website. In
+                                                                            via the web, due to lack of accuracy in search engines, we probably would need the accurate url of the company which sells the refrigerator, so 
+                                                                            we can access its stataic website. In
                 <b>web 2.0</b>
                 we could use a search engine and by searching the
-                                query "buy refrigerator", we would get many possible fitting websites, of several companies, and also
-                                related forums, blogs and chats about refrigerators, so we can publish questions and read what other
-                                users though of specific models. In
+                                                                query "buy refrigerator", we would get many possible fitting websites, of several companies, and also
+                                                                related forums, blogs and chats about refrigerators, so we can publish questions and read what other
+                                                                users thought of specific models. In
                 <b>web 3.0</b>, we can chat with a bot of the company that can help us
-                                    choose the fit refrigerator for our needs. In addition, based on our searching history and other user
-                                    patterns, the website can personalize the provided content and display what we are looking for.
+                                                                            choose the fit refrigerator for our needs. In addition, based on our searching history and other user
+                                                                            patterns, the website can personalize the provided content and display what we are looking for.
             </p>
         </div>
         <div id="contact"></div>

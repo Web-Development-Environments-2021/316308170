@@ -187,3 +187,11 @@ table#qa_table{
     border: 1.5px solid black;
     border-collapse: collapse;
 }
+
+#logo{
+    top: 1px; 
+    right: 10px; 
+    z-index: 10000; 
+    width: 200px; 
+    position: fixed;
+}
