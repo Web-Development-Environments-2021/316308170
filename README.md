@@ -22,7 +22,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-photos]](https://web-development-environments-2021.github.io/assignment1-shiloari/#photos)
+[![Product Name Screen Shot][product-photos]](https://web-development-environments-2021.github.io/316308170/#photos)
 
 ### General Info
 This website is dedicated to my grandfather Eldad :heart:
@@ -43,11 +43,11 @@ This website was built with the foundations of web development:
 
 Send the QR code to your friends so they can visit the website too!
 
-[![Product Name Screen Shot][product-qr]](https://web-development-environments-2021.github.io/assignment1-shiloari/#qrcode)
+[![Product Name Screen Shot][product-qr]](https://web-development-environments-2021.github.io/316308170/#qrcode)
 
 If you wish to contact Eldad via e-mail, you can do so from the website!
 
-[![Product Name Screen Shot][product-contact]](https://web-development-environments-2021.github.io/assignment1-shiloari/#contact)
+[![Product Name Screen Shot][product-contact]](https://web-development-environments-2021.github.io/316308170/#contact)
 
 
 ## Website Details
@@ -56,7 +56,7 @@ Developer: Ariel Shilo
 
 ID: 316308170
 
-Visit Website: [Click here!](https://web-development-environments-2021.github.io/assignment1-shiloari/)
+Visit Website: [Click here!](https://web-development-environments-2021.github.io/316308170/)
 
 
 

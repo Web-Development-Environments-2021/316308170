@@ -1,6 +1,5 @@
 body {
     background: url("./images/background.jpg") no-repeat;
-    /* Keep the inherited background full size. */
     background-attachment: fixed;
     background-size: cover;
     display: grid;
@@ -38,9 +37,6 @@ body {
     margin: -20px;
 }
 
-
-/* Add a black background color to the top navigation */
-
 .topnav {
     top: 0;
     left: 0;
@@ -52,9 +48,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-/* Style the links inside the navigation bar */
-
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -64,25 +57,14 @@ body {
     font-size: 17px;
 }
 
-
-/* Change the color of links on hover */
-
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-
-/* Add a color to the active/current link */
-
 .topnav a:active {
     background-color: #ff6673;
     color: white;
-}
-
-hr.rounded {
-    border-top: 3px solid #ff6673;
-    border-radius: 5px;
 }
 
 div.container {
@@ -94,66 +76,23 @@ div.container {
 }
 
 .divider {
-    /* minor cosmetics */
     display: table;
     font-size: 24px;
     text-align: center;
     width: 100%;
-    /* divider width */
     margin: 40px auto;
-    /* spacing above/below */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
 }
 
 .divider span {
-    display: table-cell;
+    display:block;
     position: relative;
-}
-
-.divider span:first-child,
-.divider span:last-child {
-    width: 50%;
-    top: 13px;
-    /* adjust vertical align */
-    -moz-background-size: 100% 2px;
-    /* line width */
-    background-size: 100% 2px;
-    /* line width */
-    background-position: 0 0, 0 100%;
-    background-repeat: no-repeat;
-}
-
-.divider span:first-child {
-    /* color changes in here */
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
-    background-image: -webkit-linear-gradient(180deg, transparent, #000);
-    background-image: -moz-linear-gradient(180deg, transparent, #000);
-    background-image: -o-linear-gradient(180deg, transparent, #000);
-    background-image: linear-gradient(90deg, transparent, #000);
-}
-
-.divider span:nth-child(2) {
-    color: #000;
-    padding: 0px 5px;
-    width: auto;
-    white-space: nowrap;
-}
-
-.divider span:last-child {
-    /* color changes in here */
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
-    background-image: -webkit-linear-gradient(180deg, #000, transparent);
-    background-image: -moz-linear-gradient(180deg, #000, transparent);
-    background-image: -o-linear-gradient(180deg, #000, transparent);
-    background-image: linear-gradient(90deg, #000, transparent);
-}
-
-.QRcode-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    background-color: black;
+    height: 1.5px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 #qa_table, #qa_table td{
@@ -170,6 +109,7 @@ table#qa_table{
     margin-left: auto; 
     margin-right: auto;
     width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #qa_table td:hover {
